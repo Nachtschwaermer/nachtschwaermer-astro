@@ -1,0 +1,15 @@
+---
+const { numbers } = Astro.props;
+---
+<section class='bg-statistics-picture bg-cover bg-center my-20 jarallax'>
+    <div class='bg-gray-800 text-white bg-opacity-60'>
+      <ul class='container mx-auto grid md:grid-cols-3 gap-6 py-16'>
+        {numbers.map(number => 
+        <li class='text-center'>
+          <span class='block text-8xl mb-6 font-slab'>{ number.value }</span>
+          <span class='block tracking-wide font-light'>{ number.label }</span>
+        </li>
+        )}
+      </ul>
+    </div>
+  </section>

@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Persons from '../components/Persons.astro';
+import Quote from '../components/Quote.astro';
+import Statistics from '../components/Statistics.astro';
+
+import {frontmatter as about} from '../pages/_about.md';
+import {Content as AboutContent} from '../pages/_about.md';
+
+const persons = await Astro.glob('./_persons/*.md');
+---
+<Layout title="Nüsser Nachtschwärmer">
+	<main>
+		<section class='container mx-auto my-20 px-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-24 items-start'>
+			<div class='md:pt-2 md:w-1/4'>
+				<h2 class='uppercase text-sm tracking-wide border-b border-green-600 font-title'>{about.title}</h2>
+			</div>
+			<div class="prose lg:prose-lg w-full md:w-3/4">
+				<AboutContent />
+			</div>
+		</section>
+		<Statistics numbers={about.statistics} />
+		<Persons persons={persons} />
+        <Quote text={about.quote.text} cite={about.quote.cite} />
+	</main>
+</Layout>

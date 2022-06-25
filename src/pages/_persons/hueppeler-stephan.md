@@ -1,0 +1,4 @@
+---
+title: Stephan Hüppeler
+rank: ''
+---

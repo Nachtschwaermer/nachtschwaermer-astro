@@ -1,0 +1,4 @@
+---
+title: Stefan Schumacher
+rank: ''
+---
