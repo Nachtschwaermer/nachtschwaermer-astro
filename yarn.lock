@@ -94,7 +94,7 @@
     svelte "^3.24.0"
     svelte2tsx "^0.5.5"
 
-"@astrojs/tailwind@^0.2.1":
+"@astrojs/tailwind@0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-0.2.1.tgz#a8397d2a2d4310b0735b4bfe2f5d1d7b97b533c6"
   integrity sha512-aHG6YZjfkkXNwEzgR8VG0u0qWjXwset6oqe0LpdIOKYZJuqo0WL8gmacF/8Dhl8WkJbNinFUzQcd6HCfU0EcyQ==
@@ -403,7 +403,7 @@
   dependencies:
     tsm "^2.1.4"
 
-"@tailwindcss/typography@^0.5.2":
+"@tailwindcss/typography@0.5.2":
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.2.tgz#24b069dab24d7a2467d01aca0dd432cb4b29f0ee"
   integrity sha512-coq8DBABRPFcVhVIk6IbKyyHUt7YTEC/C992tatFB+yEx5WGBQrCgsSFjxHUr8AWXphWckadVJbominEduYBqw==
@@ -608,7 +608,7 @@ ast-types@0.14.2, ast-types@^0.14.2:
   dependencies:
     tslib "^2.0.1"
 
-astro@^1.0.0-beta.47:
+astro@1.0.0-beta.47:
   version "1.0.0-beta.47"
   resolved "https://registry.yarnpkg.com/astro/-/astro-1.0.0-beta.47.tgz#92307a3022a27e76923505986f8a9c2865740ec2"
   integrity sha512-S1kSN9mMGwV0630NMCLYq6tRX4g4Rmv34PgDFUzto3CQa+1dImfo2VWUplALjKaZ41ra0rDJ7TW+iSj+0X9koQ==
@@ -1904,7 +1904,7 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-jarallax@^2.0.3:
+jarallax@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/jarallax/-/jarallax-2.0.3.tgz#586bc31e0164a2ffab014752f426da7c34cd126d"
   integrity sha512-K50tf1hJ3eoyVwGs9Hin/tweNqJoHw1BdVGMr8ZCHf4LlbeuDbAPRoaFl6Lsg/fseYag4SoFA/rP7qw8Sb/JuQ==
