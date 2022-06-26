@@ -1,5 +1,5 @@
 ---
 title: Jens Küsters
-rank: ''
+rank: Zugkönig 2022
 
 ---
