@@ -91,10 +91,10 @@
     svelte "^3.24.0"
     svelte2tsx "^0.5.5"
 
-"@astrojs/tailwind@0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-0.2.3.tgz#250ef48ba4a422309cb6551725e430c4c2544f84"
-  integrity sha512-/2XeV0wI5nya1elsWtQvlDaATDTx4heAhPsndpjb3+l1XcBPFPkTAlc6b98UmgteOmlXkFAzE/V0Qkzd4ml6iQ==
+"@astrojs/tailwind@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-0.2.4.tgz#6d772acc90003fb5567408c29fe22c5894b4217f"
+  integrity sha512-rDpUHXOUmQkReIvaTBgxYsrsz8Hgt93Tbw9gu7Bkf7Uys6cBCnnQgFpPtdgrqyLNZ0qo9vAxWHSyBSi6jAs1yA==
   dependencies:
     "@proload/core" "^0.3.2"
     autoprefixer "^10.4.7"
