@@ -12,6 +12,6 @@
     "@astrojs/tailwind": "0.2.4",
     "@tailwindcss/typography": "0.5.4",
     "astro": "1.0.0-beta.72",
-    "jarallax": "2.0.3"
+    "jarallax": "2.0.4"
   }
 }
