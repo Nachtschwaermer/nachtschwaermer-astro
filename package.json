@@ -11,7 +11,7 @@
   "devDependencies": {
     "@astrojs/tailwind": "1.0.1",
     "@tailwindcss/typography": "0.5.7",
-    "astro": "1.2.4",
+    "astro": "1.2.5",
     "jarallax": "2.0.4"
   }
 }
