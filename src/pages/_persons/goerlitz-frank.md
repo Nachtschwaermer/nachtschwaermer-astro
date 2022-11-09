@@ -1,4 +1,0 @@
----
-title: Frank Görlitz †
-rank: ''
----

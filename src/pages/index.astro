@@ -8,6 +8,7 @@ import {frontmatter as about} from '../pages/_about.md';
 import {Content as AboutContent} from '../pages/_about.md';
 
 const persons = await Astro.glob('./_persons/*.md');
+const deceased = await Astro.glob('./_deceased/*.md');
 ---
 <Layout title="Nüsser Nachtschwärmer">
 	<main>
@@ -20,7 +21,8 @@ const persons = await Astro.glob('./_persons/*.md');
 			</div>
 		</section>
 		<Statistics numbers={about.statistics} />
-		<Persons persons={persons} />
+		<Persons persons={persons} title='Der Zug' />
+		<Persons persons={deceased} title='Wir trauern um unsere Verstorbenen' />
         <Quote text={about.quote.text} cite={about.quote.cite} />
 	</main>
 </Layout>

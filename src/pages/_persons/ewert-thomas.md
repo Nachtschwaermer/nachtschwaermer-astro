@@ -1,5 +1,0 @@
----
-title: Thomas Ewert †
-rank: ''
-
----

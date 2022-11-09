@@ -1,5 +1,0 @@
----
-title: Gernot Dohmann †
-rank: ''
-
----
