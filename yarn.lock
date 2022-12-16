@@ -1930,12 +1930,12 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
-jarallax@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/jarallax/-/jarallax-2.0.4.tgz#8ea760480119d0f0b3493c72d99dfce768a1b214"
-  integrity sha512-vvQXYiRsjhmuD6vmgnkbzFWUBTmOXUFK4ncD8bUQ74rUAaRHFAwE3m4pbOqmxecdljWXtufA4EYVu67+L8PKBA==
+jarallax@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/jarallax/-/jarallax-2.1.0.tgz#f21e7e12f4853c77a26016cfac8095af28f8adf4"
+  integrity sha512-SQ4dYb5zyr3h71IUt2vPrMH3a40F8gUz3r9xnrY/0vydSlpbL0qj9mRpQhZk6xMXsqg9HbVyef1IcNGbNe/adw==
   dependencies:
-    video-worker "^2.0.0"
+    video-worker "^2.1.2"
 
 js-tokens@^4.0.0:
   version "4.0.0"
@@ -3649,10 +3649,10 @@ vfile@^5.0.0, vfile@^5.3.2:
     unist-util-stringify-position "^3.0.0"
     vfile-message "^3.0.0"
 
-video-worker@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/video-worker/-/video-worker-2.0.0.tgz#22bce64fa1a0b04f46f0066c37de72a3a8463241"
-  integrity sha512-hdah9eSOaxDgj8SSE82HQkj4yzgXVK91ceMqJc6/0Q+M2710LTy7J1Jxgw5RDSPRfgMc68YuFtgptnodsje5Fw==
+video-worker@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/video-worker/-/video-worker-2.1.2.tgz#94d8068d65638e1ff17d13e6725dc2da5c29f476"
+  integrity sha512-Hv0Ot8vJvc1csadfchMerC0zNRkCJAUy+QUmZ+QqByuyabF5xib7OlA6Uh34q6HzJ42fwr9PkrSjALEA+HJ8rQ==
 
 vite@~3.2.5:
   version "3.2.5"
