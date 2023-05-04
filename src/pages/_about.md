@@ -11,7 +11,7 @@ statistics: [
     },
     {
         label: 'Zugnummer 2023',
-        value: ?
+        value: '?'
     }
 ]
 quote:
