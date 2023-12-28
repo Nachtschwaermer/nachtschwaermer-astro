@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/tailwind": "5.0.4",
+    "@astrojs/tailwind": "5.1.0",
     "@tailwindcss/typography": "0.5.10",
     "astro": "4.0.8",
     "jarallax": "2.1.4",
