@@ -32,7 +32,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [Nachtschwaermer/nachtschwaermer-astro](https://github.com/Nachtschwaermer/nachtschwaermer-astro)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|9<br/>Tools used|01/05/24 <br/>Report generated|
+|10<br/>Tools used|01/11/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -116,13 +116,14 @@ Full tech stack [here](/techstack.md)
 </table>
 
 
-## <img src='https://img.stackshare.io/group.svg' /> Open source packages (1)</h2>
+## <img src='https://img.stackshare.io/group.svg' /> Open source packages (2)</h2>
 
-## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (1)
+## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (2)
 
 |NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
 |:------|:------|:------|:------|:------|:------|
-|[tailwindcss](https://www.npmjs.com/tailwindcss)|v3.3.6|12/05/23|renovate[bot] |MIT|N/A|
+|[@tailwindcss/typography](https://www.npmjs.com/@tailwindcss/typography)|v0.5.10|01/05/24|renovate[bot] |N/A|N/A|
+|[tailwindcss](https://www.npmjs.com/tailwindcss)|v3.4.1|01/05/24|renovate[bot] |MIT|N/A|
 
 <br/>
 <div align='center'>
