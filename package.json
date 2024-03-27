@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@astrojs/tailwind": "5.1.0",
-    "@tailwindcss/typography": "0.5.10",
+    "@tailwindcss/typography": "0.5.11",
     "astro": "4.5.10",
     "jarallax": "2.2.0",
     "postcss": "8.4.38",
