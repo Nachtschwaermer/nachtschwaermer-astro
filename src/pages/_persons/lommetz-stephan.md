@@ -1,4 +1,4 @@
 ---
 title: Stephan Lommetz
-rank: ''
+rank: 'Zugkönig 2024'
 ---
