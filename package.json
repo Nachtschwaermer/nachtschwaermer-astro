@@ -13,7 +13,7 @@
     "@tailwindcss/typography": "0.5.13",
     "astro": "4.12.2",
     "jarallax": "2.2.1",
-    "postcss": "8.4.39",
+    "postcss": "8.4.40",
     "tailwindcss": "3.4.6"
   }
 }
