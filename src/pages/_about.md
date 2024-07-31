@@ -6,8 +6,8 @@ statistics: [
         value: 37
     },
     {
-        label: 'Marschierer 2023',
-        value: 24
+        label: 'Marschierer 2024',
+        value: 27
     },
     {
         label: 'Zugnummer 2024',
