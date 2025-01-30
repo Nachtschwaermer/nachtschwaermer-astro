@@ -8,8 +8,8 @@ import {frontmatter as about} from '../pages/_about.md';
 import {Content as AboutContent} from '../pages/_about.md';
 import { getCollection } from 'astro:content';
 
-const persons = await getCollection('persons');
-const deceased = await getCollection('deceased');;
+const persons = (await getCollection('persons')).sort((a, b) => a.id.localeCompare(b.id));
+const deceased = (await getCollection('deceased')).sort((a, b) => a.id.localeCompare(b.id));
 ---
 <Layout title="Nüsser Nachtschwärmer">
 	<main>
