@@ -6,9 +6,10 @@ import Statistics from '../components/Statistics.astro';
 
 import {frontmatter as about} from '../pages/_about.md';
 import {Content as AboutContent} from '../pages/_about.md';
+import { getCollection } from 'astro:content';
 
-const persons = await Astro.glob('./_persons/*.md');
-const deceased = await Astro.glob('./_deceased/*.md');
+const persons = await getCollection('persons');
+const deceased = await getCollection('deceased');;
 ---
 <Layout title="Nüsser Nachtschwärmer">
 	<main>
