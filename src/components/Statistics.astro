@@ -1,15 +1,18 @@
 ---
+import { Picture } from 'astro:assets';
+import flagge from '../assets/flagge.jpg';
 const { numbers } = Astro.props;
 ---
-<section class='bg-statistics-picture bg-cover bg-center my-20 jarallax'>
-    <div class='bg-gray-800/60 text-white'>
-      <ul class='container mx-auto grid md:grid-cols-3 gap-6 py-16'>
-        {numbers.map(number => 
-        <li class='text-center'>
-          <span class='block text-8xl mb-6 font-slab'>{ number.value }</span>
-          <span class='block tracking-wide font-light'>{ number.label }</span>
-        </li>
-        )}
-      </ul>
-    </div>
-  </section>
+<section class='my-20 jarallax'>
+  <Picture src={flagge} layout='full-width' formats={['avif', 'webp']} alt='' class='absolute top-0 left-o w-full h-full object-cover object-center jarallax-img' />
+  <div class='bg-gray-800/60 text-white'>
+    <ul class='container mx-auto grid md:grid-cols-3 gap-6 py-16'>
+      {numbers.map(number => 
+      <li class='text-center'>
+        <span class='block text-8xl mb-6 font-slab'>{ number.value }</span>
+        <span class='block tracking-wide font-light'>{ number.label }</span>
+      </li>
+      )}
+    </ul>
+  </div>
+</section>
