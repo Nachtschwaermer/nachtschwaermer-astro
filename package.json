@@ -14,7 +14,7 @@
     "@fontsource/sanchez": "5.2.6",
     "@tailwindcss/typography": "0.5.16",
     "@tailwindcss/vite": "4.1.11",
-    "astro": "5.12.1",
+    "astro": "5.12.2",
     "jarallax": "2.2.1",
     "tailwindcss": "4.1.11",
     "typescript": "5.8.3"
