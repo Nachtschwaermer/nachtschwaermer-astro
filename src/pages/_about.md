@@ -3,15 +3,15 @@ title: Die Nachtschwärmer
 statistics: [
     {
         label: 'Jahre aktiv',
-        value: 37
+        value: 38
     },
     {
-        label: 'Marschierer 2024',
-        value: 27
+        label: 'Mitglieder 2025',
+        value: 25
     },
     {
-        label: 'Zugnummer 2024',
-        value: '4'
+        label: 'Zugnummer 2025',
+        value: '28'
     }
 ]
 quote:
