@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@fontsource/montserrat':
-        specifier: 5.2.6
-        version: 5.2.6
+        specifier: 5.2.7
+        version: 5.2.7
       '@fontsource/roboto':
         specifier: 5.2.6
         version: 5.2.6
@@ -234,8 +234,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fontsource/montserrat@5.2.6':
-    resolution: {integrity: sha512-AfFxq1q5tgkOsjQfMFsh95uMXh39VbGOuBLlHLFg16/txv93lqK7Sr6jev0neuJzZy1kqRG16SH6xpUYnk4cZg==}
+  '@fontsource/montserrat@5.2.7':
+    resolution: {integrity: sha512-UUa6yixHm3DISsFTcEq3AVVWRUpl3HGQXq/4QVXpSnIPMOqH5Qmer/PeNphkg/5jgA4XfmijymkmD59x8TYOSw==}
 
   '@fontsource/roboto@5.2.6':
     resolution: {integrity: sha512-hzarG7yAhMoP418smNgfY4fO7UmuUEm5JUtbxCoCcFHT0hOJB+d/qAEyoNjz7YkPU5OjM2LM8rJnW8hfm0JLaA==}
@@ -1881,7 +1881,7 @@ snapshots:
   '@esbuild/win32-x64@0.25.9':
     optional: true
 
-  '@fontsource/montserrat@5.2.6': {}
+  '@fontsource/montserrat@5.2.7': {}
 
   '@fontsource/roboto@5.2.6': {}
 
