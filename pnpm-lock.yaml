@@ -22,7 +22,7 @@ importers:
         version: 0.5.19(tailwindcss@4.1.15)
       '@tailwindcss/vite':
         specifier: 4.1.15
-        version: 4.1.15(vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2))
+        version: 4.1.15(vite@6.4.1(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2))
       astro:
         specifier: 5.14.8
         version: 5.14.8(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.52.5)(typescript@5.9.3)
@@ -1586,8 +1586,8 @@ packages:
   video-worker@2.2.0:
     resolution: {integrity: sha512-bjdpCArfD/kvt3HBU2sJUEEFq+6HjIufKXL2NojWswInxalJwR5yh/cgaGismHS8PAe5hx+W0GfrFqlxJTfI/w==}
 
-  vite@6.4.0:
-    resolution: {integrity: sha512-oLnWs9Hak/LOlKjeSpOwD6JMks8BeICEdYMJBf6P4Lac/pO9tKiv/XhXnAM7nNfSkZahjlCZu9sS50zL8fSnsw==}
+  vite@6.4.1:
+    resolution: {integrity: sha512-+Oxm7q9hDoLMyJOYfUYBuHQo+dkAloi33apOPP56pzj+vsdJDzr+j1NISE5pyaAuKL4A3UD34qd0lx5+kfKp2g==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -2126,12 +2126,12 @@ snapshots:
       postcss-selector-parser: 6.0.10
       tailwindcss: 4.1.15
 
-  '@tailwindcss/vite@4.1.15(vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2))':
+  '@tailwindcss/vite@4.1.15(vite@6.4.1(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2))':
     dependencies:
       '@tailwindcss/node': 4.1.15
       '@tailwindcss/oxide': 4.1.15
       tailwindcss: 4.1.15
-      vite: 6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)
+      vite: 6.4.1(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)
 
   '@types/debug@4.1.12':
     dependencies:
@@ -2244,8 +2244,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.17.1
       vfile: 6.0.3
-      vite: 6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)
-      vitefu: 1.1.1(vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2))
+      vite: 6.4.1(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)
+      vitefu: 1.1.1(vite@6.4.1(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -3426,7 +3426,7 @@ snapshots:
 
   video-worker@2.2.0: {}
 
-  vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2):
+  vite@6.4.1(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2):
     dependencies:
       esbuild: 0.25.11
       fdir: 6.5.0(picomatch@4.0.3)
@@ -3440,9 +3440,9 @@ snapshots:
       jiti: 2.6.1
       lightningcss: 1.30.2
 
-  vitefu@1.1.1(vite@6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)):
+  vitefu@1.1.1(vite@6.4.1(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)):
     optionalDependencies:
-      vite: 6.4.0(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)
+      vite: 6.4.1(@types/node@24.8.1)(jiti@2.6.1)(lightningcss@1.30.2)
 
   web-namespaces@2.0.1: {}
 
