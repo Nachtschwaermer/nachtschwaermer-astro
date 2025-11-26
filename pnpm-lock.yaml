@@ -12,8 +12,8 @@ importers:
         specifier: 5.2.8
         version: 5.2.8
       '@fontsource/roboto':
-        specifier: 5.2.8
-        version: 5.2.8
+        specifier: 5.2.9
+        version: 5.2.9
       '@fontsource/sanchez':
         specifier: 5.2.8
         version: 5.2.8
@@ -238,8 +238,8 @@ packages:
   '@fontsource/montserrat@5.2.8':
     resolution: {integrity: sha512-xTjLxSbSfCycDB0pwmNsfNvdfWPaDaRQ2LC6yt/ZI7SdvXG52zHnzNYC/09mzuAuWNJyShkteutfCoDgym56hQ==}
 
-  '@fontsource/roboto@5.2.8':
-    resolution: {integrity: sha512-oh9g4Cg3loVMz9MWeKWfDI+ooxxG1aRVetkiKIb2ESS2rrryGecQ/y4pAj4z5A5ebyw450dYRi/c4k/I3UBhHA==}
+  '@fontsource/roboto@5.2.9':
+    resolution: {integrity: sha512-ZTkyHiPk74B/aj8BZWbsxD5Yu+Lq+nR64eV4wirlrac2qXR7jYk2h6JlLYuOuoruTkGQWNw2fMuKNavw7/rg0w==}
 
   '@fontsource/sanchez@5.2.8':
     resolution: {integrity: sha512-/fl80U00yxuVBLTeZoYgjVHcQNkhrbLTPYyPBRPZwexGF1ulb6Fudu7wdv08/JkqUR2iFZLX3BEY0FQ4yd9LRQ==}
@@ -1899,7 +1899,7 @@ snapshots:
 
   '@fontsource/montserrat@5.2.8': {}
 
-  '@fontsource/roboto@5.2.8': {}
+  '@fontsource/roboto@5.2.9': {}
 
   '@fontsource/sanchez@5.2.8': {}
 
