@@ -13,10 +13,10 @@
     "@fontsource/roboto": "5.2.9",
     "@fontsource/sanchez": "5.2.8",
     "@tailwindcss/typography": "0.5.19",
-    "@tailwindcss/vite": "4.1.17",
+    "@tailwindcss/vite": "4.1.18",
     "astro": "5.16.5",
     "jarallax": "2.2.1",
-    "tailwindcss": "4.1.17",
+    "tailwindcss": "4.1.18",
     "typescript": "5.9.3"
   },
   "packageManager": "pnpm@10.25.0"
