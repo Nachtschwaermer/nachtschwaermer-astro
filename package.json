@@ -11,22 +11,22 @@
 		"lint:fix": "eslint --fix . && prettier --write ."
 	},
 	"devDependencies": {
-		"@eslint/js": "^10.0.1",
+		"@eslint/js": "10.0.1",
 		"@fontsource/montserrat": "5.2.8",
 		"@fontsource/roboto": "5.2.10",
 		"@fontsource/sanchez": "5.2.8",
 		"@tailwindcss/typography": "0.5.19",
 		"@tailwindcss/vite": "4.2.1",
 		"astro": "5.18.1",
-		"eslint": "^10.0.3",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-astro": "^1.6.0",
+		"eslint": "10.0.3",
+		"eslint-config-prettier": "10.1.8",
+		"eslint-plugin-astro": "1.6.0",
 		"jarallax": "2.2.1",
-		"prettier": "^3.8.1",
-		"prettier-plugin-astro": "^0.14.1",
+		"prettier": "3.8.1",
+		"prettier-plugin-astro": "0.14.1",
 		"tailwindcss": "4.2.1",
 		"typescript": "5.9.3",
-		"typescript-eslint": "^8.57.1"
+		"typescript-eslint": "8.57.1"
 	},
 	"packageManager": "pnpm@10.32.1"
 }
