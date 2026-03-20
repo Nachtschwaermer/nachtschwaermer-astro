@@ -1,29 +1,40 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Persons from '../components/Persons.astro';
-import Quote from '../components/Quote.astro';
-import Statistics from '../components/Statistics.astro';
+import Layout from "../layouts/Layout.astro";
+import Persons from "../components/Persons.astro";
+import Quote from "../components/Quote.astro";
+import Statistics from "../components/Statistics.astro";
 
-import {frontmatter as about} from '../pages/_about.md';
-import {Content as AboutContent} from '../pages/_about.md';
-import { getCollection } from 'astro:content';
+import { frontmatter as about } from "../pages/_about.md";
+import { Content as AboutContent } from "../pages/_about.md";
+import { getCollection } from "astro:content";
 
-const persons = (await getCollection('persons')).sort((a, b) => a.id.localeCompare(b.id));
-const deceased = (await getCollection('deceased')).sort((a, b) => a.id.localeCompare(b.id));
+const persons = (await getCollection("persons")).sort((a, b) =>
+	a.id.localeCompare(b.id),
+);
+const deceased = (await getCollection("deceased")).sort((a, b) =>
+	a.id.localeCompare(b.id),
+);
 ---
+
 <Layout title="Nüsser Nachtschwärmer">
 	<main>
-		<section class='container mx-auto my-20 px-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-24 items-start'>
-			<div class='md:pt-2 md:w-1/4'>
-				<h2 class='uppercase text-sm tracking-wide border-b border-green-600 font-title'>{about.title}</h2>
+		<section
+			class="container mx-auto my-20 px-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-24 items-start"
+		>
+			<div class="md:pt-2 md:w-1/4">
+				<h2
+					class="uppercase text-sm tracking-wide border-b border-green-600 font-title"
+				>
+					{about.title}
+				</h2>
 			</div>
 			<div class="prose lg:prose-lg w-full md:w-3/4">
 				<AboutContent />
 			</div>
 		</section>
 		<Statistics numbers={about.statistics} />
-		<Persons persons={persons} title='Der Zug' />
-		<Persons persons={deceased} title='Wir trauern um unsere Verstorbenen' />
-        <Quote text={about.quote.text} cite={about.quote.cite} />
+		<Persons persons={persons} title="Der Zug" />
+		<Persons persons={deceased} title="Wir trauern um unsere Verstorbenen" />
+		<Quote text={about.quote.text} cite={about.quote.cite} />
 	</main>
 </Layout>

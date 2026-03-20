@@ -1,4 +1,4 @@
 ---
 title: Andreas Neuenhausen
-rank: ''
+rank: ""
 ---

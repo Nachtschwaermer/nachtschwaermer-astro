@@ -1,4 +1,4 @@
 ---
 title: Christian Hahn
-rank: ''
+rank: ""
 ---

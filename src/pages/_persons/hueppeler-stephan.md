@@ -1,4 +1,4 @@
 ---
 title: Stephan Hüppeler
-rank: ''
+rank: ""
 ---

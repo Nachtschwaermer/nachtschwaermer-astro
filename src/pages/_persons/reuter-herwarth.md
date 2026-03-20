@@ -1,4 +1,4 @@
 ---
 title: Herwarth Reuter
-rank: ''
+rank: ""
 ---

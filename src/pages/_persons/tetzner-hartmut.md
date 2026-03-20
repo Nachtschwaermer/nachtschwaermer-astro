@@ -1,4 +1,4 @@
 ---
 title: Hartmut Tetzner
-rank: ''
+rank: ""
 ---

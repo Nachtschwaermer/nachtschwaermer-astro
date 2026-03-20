@@ -1,4 +1,4 @@
 ---
 title: Alexander Stuve
-rank: ''
+rank: ""
 ---

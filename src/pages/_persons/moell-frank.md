@@ -1,4 +1,4 @@
 ---
 title: Frank Möll
-rank: ''
+rank: ""
 ---

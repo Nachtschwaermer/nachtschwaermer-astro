@@ -30,13 +30,16 @@ Full tech stack [here](/techstack.md)
 <div align="center">
 
 # Tech Stack File
+
 ![](https://img.stackshare.io/repo.svg "repo") [Nachtschwaermer/nachtschwaermer-astro](https://github.com/Nachtschwaermer/nachtschwaermer-astro)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
 |9<br/>Tools used|12/14/23 <br/>Report generated|
 |------|------|
+
 </div>
 
 ## <img src='https://img.stackshare.io/languages.svg'/> Languages (2)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/6727/css.png' alt='CSS 3'>
@@ -58,6 +61,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## <img src='https://img.stackshare.io/frameworks.svg'/> Frameworks (2)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/3339/rlFcjEdI.png' alt='PostCSS'>
@@ -79,6 +83,7 @@ Full tech stack [here](/techstack.md)
 </table>
 
 ## <img src='https://img.stackshare.io/devops.svg'/> DevOps (4)
+
 <table><tr>
   <td align='center'>
   <img width='36' height='36' src='https://img.stackshare.io/service/1046/git.png' alt='Git'>
@@ -115,14 +120,13 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
-
 ## <img src='https://img.stackshare.io/group.svg' /> Open source packages (1)</h2>
 
 ## <img width='24' height='24' src='https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png'/> npm (1)
 
-|NAME|VERSION|LAST UPDATED|LAST UPDATED BY|LICENSE|VULNERABILITIES|
-|:------|:------|:------|:------|:------|:------|
-|[tailwindcss](https://www.npmjs.com/tailwindcss)|v3.3.6|12/05/23|renovate[bot] |MIT|N/A|
+| NAME                                             | VERSION | LAST UPDATED | LAST UPDATED BY | LICENSE | VULNERABILITIES |
+| :----------------------------------------------- | :------ | :----------- | :-------------- | :------ | :-------------- |
+| [tailwindcss](https://www.npmjs.com/tailwindcss) | v3.3.6  | 12/05/23     | renovate[bot]   | MIT     | N/A             |
 
 <br/>
 <div align='center'>

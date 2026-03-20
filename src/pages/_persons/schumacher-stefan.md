@@ -1,4 +1,4 @@
 ---
 title: Stefan Schumacher
-rank: ''
+rank: ""
 ---

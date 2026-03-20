@@ -1,4 +1,4 @@
 ---
 title: Harald Hausbeck
-rank: ''
+rank: ""
 ---

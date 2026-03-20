@@ -1,5 +1,4 @@
 ---
 title: Matthias Braun
-rank: ''
-
+rank: ""
 ---

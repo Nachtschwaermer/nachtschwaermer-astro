@@ -1,4 +1,4 @@
 ---
 title: Notker Schmitz-Schachner
-rank: ''
+rank: ""
 ---

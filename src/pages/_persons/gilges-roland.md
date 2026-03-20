@@ -1,5 +1,4 @@
 ---
 title: Roland Gilges
-rank: ''
-
+rank: ""
 ---

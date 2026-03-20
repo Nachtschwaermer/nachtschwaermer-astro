@@ -1,16 +1,16 @@
 ---
-import '@fontsource/roboto/latin-100.css';
-import '@fontsource/roboto/latin-300.css';
-import '@fontsource/roboto/latin-400.css';
-import '@fontsource/montserrat/latin-400.css';
-import '@fontsource/montserrat/latin-700.css';
-import '@fontsource/sanchez/latin-400.css';
+import "@fontsource/roboto/latin-100.css";
+import "@fontsource/roboto/latin-300.css";
+import "@fontsource/roboto/latin-400.css";
+import "@fontsource/montserrat/latin-400.css";
+import "@fontsource/montserrat/latin-700.css";
+import "@fontsource/sanchez/latin-400.css";
 
-import '../styles/main.css';
+import "../styles/main.css";
 
-import { Picture } from 'astro:assets';
-import Logo from '../assets/logo.svg';
-import zug from '../assets/zug.jpg';
+import { Picture } from "astro:assets";
+import Logo from "../assets/logo.svg";
+import zug from "../assets/zug.jpg";
 
 export interface Props {
 	title: string;
@@ -20,45 +20,70 @@ const { title } = Astro.props as Props;
 const currentDate = new Date();
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/manifest.webmanifest">
-  <script src="https://cdn.usefathom.com/script.js" data-site="QVVBFSLJ" defer></script>
-	<title>{title}</title>
-</head>
-<body>
-    <header class='w-full h-screen md:h-screen-2/3 bg-green-600 text-white jarallax'>
-      <Picture src={zug} layout='full-width' formats={['avif', 'webp']} alt='' class='absolute top-0 left-o w-full h-full object-cover object-center opacity-20 jarallax-img' priority />
-      <div class='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center space-y-6 text-center p-12'>
-        <Logo alt="Nüsser Nachtschwärmer Logo" width={220} height={220} />
-        <h1 class='text-3xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl uppercase font-title font-bold'>Nüsser Nacht<wbr>schwärmer</h1>
-        <p class='text-xl sm:text-2xl md:text-3xl font-slab'>Mitglied im Corps der Neusser Schützenlust</p>
-      </div>
-    </header>
-	<slot />
-	<footer class='text-sm text-gray-600 my-20 px-12 text-center'>
-      &copy;{ currentDate.getFullYear() } Nüsser Nachtschwärmer<br>
-      Made with
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class='fill-current w-4 h-4 mx-px inline-block'>
-        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-      </svg>
-      in Neuss
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/favicon.ico" sizes="any" />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<script src="https://cdn.usefathom.com/script.js" data-site="QVVBFSLJ" defer
+		></script>
+		<title>{title}</title>
+	</head>
+	<body>
+		<header
+			class="w-full h-screen md:h-screen-2/3 bg-green-600 text-white jarallax"
+		>
+			<Picture
+				src={zug}
+				layout="full-width"
+				formats={["avif", "webp"]}
+				alt=""
+				class="absolute top-0 left-o w-full h-full object-cover object-center opacity-20 jarallax-img"
+				priority
+			/>
+			<div
+				class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center space-y-6 text-center p-12"
+			>
+				<Logo alt="Nüsser Nachtschwärmer Logo" width={220} height={220} />
+				<h1
+					class="text-3xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl uppercase font-title font-bold"
+				>
+					Nüsser Nacht<wbr />schwärmer
+				</h1>
+				<p class="text-xl sm:text-2xl md:text-3xl font-slab">
+					Mitglied im Corps der Neusser Schützenlust
+				</p>
+			</div>
+		</header>
+		<slot />
+		<footer class="text-sm text-gray-600 my-20 px-12 text-center">
+			&copy;{currentDate.getFullYear()} Nüsser Nachtschwärmer<br />
+			Made with
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 20 20"
+				class="fill-current w-4 h-4 mx-px inline-block"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+					clip-rule="evenodd"></path>
+			</svg>
+			in Neuss
+		</footer>
+	</body>
 </html>
 
 <script>
-import {jarallax} from 'jarallax'
+	import { jarallax } from "jarallax";
 
-window.addEventListener('load', function(event) {
-  jarallax(document.querySelectorAll('.jarallax'), {
-    speed: 0.2
-  })
-})
+	window.addEventListener("load", function () {
+		jarallax(document.querySelectorAll(".jarallax"), {
+			speed: 0.2,
+		});
+	});
 </script>

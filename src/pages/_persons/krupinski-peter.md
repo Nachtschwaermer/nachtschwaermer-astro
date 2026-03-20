@@ -1,4 +1,4 @@
 ---
 title: Peter Krupinski
-rank: ''
+rank: ""
 ---

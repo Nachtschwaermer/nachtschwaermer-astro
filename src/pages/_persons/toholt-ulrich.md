@@ -1,4 +1,4 @@
 ---
 title: Ulrich Toholt
-rank: ''
+rank: ""
 ---

@@ -1,4 +1,3 @@
 ---
 title: Frank Görlitz
-
 ---

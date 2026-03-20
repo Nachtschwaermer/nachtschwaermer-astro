@@ -1,4 +1,4 @@
 ---
 title: Ulrich Gerarts
-rank: 'Zugkönig 2025'
+rank: "Zugkönig 2025"
 ---

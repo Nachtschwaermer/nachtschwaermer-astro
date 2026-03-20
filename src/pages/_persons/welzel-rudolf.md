@@ -1,4 +1,4 @@
 ---
 title: Rudolf Welzel
-rank: ''
+rank: ""
 ---

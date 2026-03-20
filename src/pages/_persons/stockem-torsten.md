@@ -1,5 +1,4 @@
 ---
 title: Torsten Stockem
-rank: ''
-
+rank: ""
 ---
