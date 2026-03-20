@@ -19,9 +19,9 @@ pnpm lint:fix   # Auto-fix ESLint + Prettier issues
 
 ## Architecture
 
-- **Astro 5** static site with **Tailwind CSS 4** (via Vite plugin) and **TypeScript**
+- **Astro 6** static site with **Tailwind CSS 4** (via Vite plugin), **Vite 7**, and **TypeScript**
 - Single-page site: `src/pages/index.astro` is the only page, composed from components and markdown content
-- **Content Collections** (`src/content.config.ts`): two collections loaded via glob — `persons` (members) and `deceased` — both from markdown files in `src/pages/_persons/` and `src/pages/_deceased/` with schema `{ title, rank? }`
+- **Content Collections** (`src/content.config.ts`): two collections loaded via glob — `persons` (members) and `deceased` — both from markdown files in `src/pages/_persons/` and `src/pages/_deceased/` with schema `{ title, rank? }`. Zod is imported from `astro/zod` (not `astro:content`)
 - `src/pages/_about.md`: contains the about section text plus statistics and quote data in YAML frontmatter
 - **Layout**: `src/layouts/Layout.astro` provides the full HTML shell including header parallax (Jarallax), navigation, footer, and Fathom analytics
 - **Parallax**: Jarallax library used on hero and section backgrounds, initialized in Layout.astro
@@ -35,3 +35,4 @@ pnpm lint:fix   # Auto-fix ESLint + Prettier issues
 - **CodeQL** GitHub Action scans JavaScript on pushes/PRs to master and weekly
 - **Lint** GitHub Action runs ESLint + Prettier on pushes/PRs to master
 - No test suite
+- Requires **Node.js ≥ 22.12.0** (`.nvmrc` targets Node 24)
