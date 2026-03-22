@@ -39,8 +39,8 @@ importers:
         specifier: 1.6.0
         version: 1.6.0(eslint@10.0.3(jiti@2.6.1))
       jarallax:
-        specifier: 2.2.1
-        version: 2.2.1
+        specifier: 3.0.0
+        version: 3.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       prettier:
         specifier: 3.8.1
         version: 3.8.1
@@ -1356,8 +1356,11 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jarallax@2.2.1:
-    resolution: {integrity: sha512-O4pqiWGp856cTGG5uBG9b0Uk7AIRmfFCVisRwgpICsG2xyIRnUrVbx4SIbpzUDAhkD00jdjBiqb1bZPTkHi1vQ==}
+  jarallax@3.0.0:
+    resolution: {integrity: sha512-ucmddehud0d3vzGNl3IhAGPvtMIlC1CrPYNgT4SVYCwohHAt0khcjlGvB1ukcy0o3hriW1PTsoln/oicvvYT0w==}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
 
   jiti@2.6.1:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
@@ -1765,6 +1768,15 @@ packages:
   radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
+  react-dom@19.2.4:
+    resolution: {integrity: sha512-AXJdLo8kgMbimY95O2aKQqsz2iWi9jMgKJhRBAxECE4IFxfcazB2LmzloIoibJI3C12IlY20+KFaLv+71bUJeQ==}
+    peerDependencies:
+      react: ^19.2.4
+
+  react@19.2.4:
+    resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
+    engines: {node: '>=0.10.0'}
+
   readdirp@5.0.0:
     resolution: {integrity: sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==}
     engines: {node: '>= 20.19.0'}
@@ -1839,6 +1851,9 @@ packages:
   sax@1.5.0:
     resolution: {integrity: sha512-21IYA3Q5cQf089Z6tgaUTr7lDAyzoTPx5HRtbhsME8Udispad8dC/+sziTNugOEx54ilvatQ9YCzl4KQLPcRHA==}
     engines: {node: '>=11.0.0'}
+
+  scheduler@0.27.0:
+    resolution: {integrity: sha512-eNv+WrVbKu1f3vbYJT/xtiF5syA5HPIMtf9IgY/nKg0sWqzAUEvqY/xm7OcZc/qafLx/iO9FgOmeSAp4v5ti/Q==}
 
   semver@7.7.4:
     resolution: {integrity: sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==}
@@ -2076,8 +2091,8 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  video-worker@2.2.0:
-    resolution: {integrity: sha512-bjdpCArfD/kvt3HBU2sJUEEFq+6HjIufKXL2NojWswInxalJwR5yh/cgaGismHS8PAe5hx+W0GfrFqlxJTfI/w==}
+  video-worker@3.0.0:
+    resolution: {integrity: sha512-fefwkS07diRNIPQYJf3IHaEDnHrajH9et39L6akiwtqWPPh1Ptz/dpmegLnkY4xFearW1gIVP1zXRitywmuCKg==}
 
   vite@7.3.1:
     resolution: {integrity: sha512-w+N7Hifpc3gRjZ63vYBXA56dvvRlNWRczTdmCBBa+CotUzAPf5b7YMdMR/8CQoeYE5LX3W4wj6RYTgonm1b9DA==}
@@ -3444,9 +3459,11 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jarallax@2.2.1:
+  jarallax@3.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
-      video-worker: 2.2.0
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+      video-worker: 3.0.0
 
   jiti@2.6.1: {}
 
@@ -3997,6 +4014,13 @@ snapshots:
 
   radix3@1.1.2: {}
 
+  react-dom@19.2.4(react@19.2.4):
+    dependencies:
+      react: 19.2.4
+      scheduler: 0.27.0
+
+  react@19.2.4: {}
+
   readdirp@5.0.0: {}
 
   regex-recursion@6.0.2:
@@ -4144,6 +4168,8 @@ snapshots:
       suf-log: 2.5.3
 
   sax@1.5.0: {}
+
+  scheduler@0.27.0: {}
 
   semver@7.7.4: {}
 
@@ -4374,7 +4400,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  video-worker@2.2.0: {}
+  video-worker@3.0.0: {}
 
   vite@7.3.1(jiti@2.6.1)(lightningcss@1.32.0):
     dependencies:
