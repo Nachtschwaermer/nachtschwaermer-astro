@@ -1,4 +1,0 @@
----
-title: Ludger Dohmann
-rank: ""
----
