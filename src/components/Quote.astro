@@ -1,6 +1,6 @@
 ---
 import { Picture } from "astro:assets";
-import wackelzug from "../assets/wackelzug2018.jpg";
+import wackelzug from "../assets/wackelzug_zeichnung.png";
 
 export interface Props {
 	text: string;
@@ -16,7 +16,7 @@ const { text, cite } = Astro.props as Props;
 		layout="full-width"
 		formats={["avif", "webp"]}
 		alt=""
-		class="absolute top-0 left-o w-full h-full object-cover object-top jarallax-img"
+		class="absolute top-0 left-0 w-full h-full object-cover object-top jarallax-img"
 	/>
 	<div class="bg-gray-800/60 text-white text-center">
 		<blockquote class="container mx-auto py-36">

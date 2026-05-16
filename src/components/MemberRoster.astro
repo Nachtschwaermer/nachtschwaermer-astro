@@ -1,0 +1,120 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+	persons: CollectionEntry<"persons">[];
+}
+
+const { persons } = Astro.props;
+
+const OFFICER_RANKS = new Set(["Oberleutnant", "Leutnant", "Spieß"]);
+
+const vorstand = persons.filter(
+	(p) => p.data.rank && OFFICER_RANKS.has(p.data.rank),
+);
+const koenig = persons.find((p) =>
+	p.data.rank?.toLowerCase().startsWith("zugkönig"),
+);
+const members = persons.filter(
+	(p) =>
+		!p.data.rank ||
+		(!OFFICER_RANKS.has(p.data.rank) &&
+			!p.data.rank.toLowerCase().startsWith("zugkönig")),
+);
+
+const cardClass =
+	"relative rounded-2xl border border-white/10 bg-white/[0.02] p-6 md:p-8";
+const cardTitleClass =
+	"text-sm font-title uppercase tracking-[0.2em] text-gold";
+---
+
+<section class="container mx-auto my-20 px-6">
+	<header
+		class="flex flex-col gap-2 mb-10 md:flex-row md:items-end md:justify-between"
+	>
+		<div>
+			<h2
+				class="text-3xl md:text-4xl font-title font-bold uppercase tracking-wider text-gold"
+			>
+				Der Zug
+			</h2>
+		</div>
+		<div class="text-sm font-title tracking-wide text-cream/70 md:text-right">
+			Schützenlust Neuss
+		</div>
+	</header>
+
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+		<div class="md:col-span-1 flex flex-col gap-6">
+			{
+				vorstand.length > 0 && (
+					<div class={`${cardClass} overflow-hidden`}>
+						<svg
+							class="pointer-events-none absolute -right-3 -top-3 h-24 w-24 text-gold/15"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="1.2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="M14.5 17.5 3 6V3h3l11.5 11.5" />
+							<path d="m13 19 6-6" />
+							<path d="m16 16 4 4" />
+							<path d="m19 21 2-2" />
+							<path d="M14.5 6.5 18 3h3v3l-3.5 3.5" />
+							<path d="m5 14 9 9" />
+							<path d="m7 17 4-4" />
+							<path d="m3 19 2 2" />
+						</svg>
+						<h3 class={`${cardTitleClass} mb-5`}>Zugleitung</h3>
+						<ul class="space-y-3">
+							{vorstand.map((p) => (
+								<li class="flex items-baseline justify-between gap-4">
+									<span class="text-cream">{p.data.title}</span>
+									<span class="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+										{p.data.rank}
+									</span>
+								</li>
+							))}
+						</ul>
+					</div>
+				)
+			}
+
+			{
+				koenig && (
+					<div class={cardClass}>
+						<div class="mb-3 flex items-center gap-3">
+							<svg
+								class="h-5 w-5 text-gold"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="1.5"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								aria-hidden="true"
+							>
+								<path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294l2.952-5.605z" />
+								<path d="M5 21h14" />
+							</svg>
+							<h3 class={cardTitleClass}>{koenig.data.rank}</h3>
+						</div>
+						<p class="text-cream">{koenig.data.title}</p>
+					</div>
+				)
+			}
+		</div>
+
+		<div class="md:col-span-2">
+			<div class={cardClass}>
+				<h3 class={`${cardTitleClass} mb-5`}>Zugmitglieder</h3>
+				<ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-3 text-cream">
+					{members.map((p) => <li>{p.data.title}</li>)}
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
