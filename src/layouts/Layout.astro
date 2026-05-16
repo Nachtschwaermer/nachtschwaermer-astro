@@ -8,9 +8,7 @@ import "@fontsource/sanchez/latin-400.css";
 
 import "../styles/main.css";
 
-import { Picture } from "astro:assets";
-import Logo from "../assets/logo.svg";
-import zug from "../assets/zug.jpg";
+import Hero from "../components/Hero.astro";
 
 export interface Props {
 	title: string;
@@ -34,39 +32,15 @@ const currentDate = new Date();
 		<title>{title}</title>
 	</head>
 	<body>
-		<header
-			class="w-full h-screen md:h-screen-2/3 bg-green-600 text-white jarallax"
-		>
-			<Picture
-				src={zug}
-				layout="full-width"
-				formats={["avif", "webp"]}
-				alt=""
-				class="absolute top-0 left-o w-full h-full object-cover object-center opacity-20 jarallax-img"
-				priority
-			/>
-			<div
-				class="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center space-y-6 text-center p-12"
-			>
-				<Logo alt="Nüsser Nachtschwärmer Logo" width={220} height={220} />
-				<h1
-					class="text-3xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl uppercase font-title font-bold"
-				>
-					Nüsser Nacht<wbr />schwärmer
-				</h1>
-				<p class="text-xl sm:text-2xl md:text-3xl font-slab">
-					Mitglied im Corps der Neusser Schützenlust
-				</p>
-			</div>
-		</header>
+		<Hero />
 		<slot />
-		<footer class="text-sm text-gray-600 my-20 px-12 text-center">
+		<footer class="text-sm text-cream/60 my-20 px-12 text-center">
 			&copy;{currentDate.getFullYear()} Nüsser Nachtschwärmer<br />
 			Made with
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 20 20"
-				class="fill-current w-4 h-4 mx-px inline-block"
+				class="fill-current size-4 mx-px inline-block text-gold"
 			>
 				<path
 					fill-rule="evenodd"

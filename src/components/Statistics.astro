@@ -1,7 +1,14 @@
 ---
 import { Picture } from "astro:assets";
-import flagge from "../assets/flagge.jpg";
-const { numbers } = Astro.props;
+import flagge from "../assets/flagge_zeichnung.png";
+
+interface Props {
+	numbers: {
+		label: string;
+		value: number | string;
+	}[];
+}
+const { numbers } = Astro.props as Props;
 ---
 
 <section class="my-20 jarallax">
@@ -10,7 +17,7 @@ const { numbers } = Astro.props;
 		layout="full-width"
 		formats={["avif", "webp"]}
 		alt=""
-		class="absolute top-0 left-o w-full h-full object-cover object-center jarallax-img"
+		class="absolute top-0 left-0 w-full h-full object-cover object-center jarallax-img"
 	/>
 	<div class="bg-gray-800/60 text-white">
 		<ul class="container mx-auto grid md:grid-cols-3 gap-6 py-16">

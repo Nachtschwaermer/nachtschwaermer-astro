@@ -1,8 +1,11 @@
 ---
+import { Picture } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import Persons from "../components/Persons.astro";
+import MemberRoster from "../components/MemberRoster.astro";
 import Quote from "../components/Quote.astro";
+import Remembrance from "../components/Remembrance.astro";
 import Statistics from "../components/Statistics.astro";
+import zugZeichnung from "../assets/zug_zeichnung.png";
 
 import { frontmatter as about } from "../pages/_about.md";
 import { Content as AboutContent } from "../pages/_about.md";
@@ -23,18 +26,25 @@ const deceased = (await getCollection("deceased")).sort((a, b) =>
 		>
 			<div class="md:pt-2 md:w-1/4">
 				<h2
-					class="uppercase text-sm tracking-wide border-b border-green-600 font-title"
+					class="uppercase text-sm tracking-wide border-b border-gold font-title"
 				>
 					{about.title}
 				</h2>
 			</div>
-			<div class="prose lg:prose-lg w-full md:w-3/4">
+			<div class="prose prose-invert lg:prose-lg w-full md:w-3/4">
+				<Picture
+					src={zugZeichnung}
+					layout="full-width"
+					formats={["avif", "webp"]}
+					alt="Illustration des Zuges der Nüsser Nachtschwärmer"
+					class="not-prose w-full mb-10"
+				/>
 				<AboutContent />
 			</div>
 		</section>
 		<Statistics numbers={about.statistics} />
-		<Persons persons={persons} title="Der Zug" />
-		<Persons persons={deceased} title="Wir trauern um unsere Verstorbenen" />
+		<MemberRoster persons={persons} />
+		<Remembrance deceased={deceased} />
 		<Quote text={about.quote.text} cite={about.quote.cite} />
 	</main>
 </Layout>

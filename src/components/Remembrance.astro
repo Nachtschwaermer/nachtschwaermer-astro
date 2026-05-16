@@ -1,0 +1,44 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+	deceased: CollectionEntry<"deceased">[];
+}
+
+const { deceased } = Astro.props as Props;
+---
+
+<section class="container max-w-xl mx-auto my-20 px-6">
+	<h2 class="text-2xl md:text-3xl font-title text-cream mb-4">Unvergessen</h2>
+	<p class="text-cream/70 mb-8 leading-relaxed">
+		Wir trauern um unsere verstorbenen Kameraden,<br />
+		die immer ein Teil unseres Zuges bleiben werden.
+	</p>
+	<ul class="space-y-3">
+		{
+			deceased.map((d) => (
+				<li class="flex items-center gap-4">
+					<svg
+						class="h-5 w-5 text-gold-muted shrink-0"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.5"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						aria-hidden="true"
+					>
+						<path
+							d="M12 3c1.5 1.4 2.5 2.7 2.5 4.1a2.5 2.5 0 1 1-5 0C9.5 5.7 10.5 4.4 12 3z"
+							fill="currentColor"
+							stroke="none"
+						/>
+						<path d="M9 11v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-8z" />
+						<path d="M7 20h10" />
+					</svg>
+					<span class="text-cream">{d.data.title}</span>
+				</li>
+			))
+		}
+	</ul>
+</section>
