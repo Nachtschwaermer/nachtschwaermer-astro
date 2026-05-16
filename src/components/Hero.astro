@@ -57,21 +57,17 @@ const stars = Array.from({ length: 70 }, () => ({
 </div>
 
 <style>
-	:root {
-		--splash-gold: #fdd66b;
-		--splash-bg: #0b0912;
-	}
 	.splash-root {
 		position: relative;
 		min-height: 100vh;
 		min-height: 100dvh;
 		width: 100%;
 		overflow: hidden;
-		color: #e8e4d8;
+		color: var(--color-cream);
 		background:
 			radial-gradient(1200px 800px at 20% 10%, #1a1628 0%, transparent 60%),
 			radial-gradient(1000px 700px at 80% 90%, #151026 0%, transparent 60%),
-			var(--splash-bg);
+			var(--color-night);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -200,7 +196,7 @@ const stars = Array.from({ length: 70 }, () => ({
 		font-weight: 600;
 		letter-spacing: 0.06em;
 		text-transform: uppercase;
-		color: var(--splash-gold);
+		color: var(--color-gold);
 		text-shadow:
 			0 0 24px rgba(253, 214, 107, 0.35),
 			0 1px 0 rgba(0, 0, 0, 0.4);
@@ -290,6 +286,12 @@ const stars = Array.from({ length: 70 }, () => ({
 
 		const REF_SIZE = 260;
 
+		let stageWidth = stage.offsetWidth;
+		const ro = new ResizeObserver((entries) => {
+			for (const e of entries) stageWidth = e.contentRect.width;
+		});
+		ro.observe(stage);
+
 		const start = performance.now();
 		requestAnimationFrame(() => {
 			bg.classList.add("is-on");
@@ -300,7 +302,7 @@ const stars = Array.from({ length: 70 }, () => ({
 		function frame(now: number) {
 			const t = now - start;
 			const loopT = t / 1000;
-			const k = stage!.offsetWidth / REF_SIZE;
+			const k = stageWidth / REF_SIZE;
 
 			const moonT = win(t, 200, 1200);
 			const me = easeOutQuint(moonT);
