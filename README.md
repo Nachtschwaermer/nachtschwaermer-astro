@@ -66,7 +66,7 @@ rank: Leutnant # optional
 
 ## CI/CD
 
-- **Lint** GitHub Action runs ESLint + Prettier on pushes and PRs to `master`
+- **Lint** GitHub Action runs ESLint + Prettier on pushes and PRs to `main`
 - **CodeQL** scans JavaScript on push, PR, and weekly on a schedule
 - **Renovate** keeps dependencies up to date (config extends [`github>derteaser/renovate-presets`](https://github.com/derteaser/renovate-presets))
 - No automated test suite

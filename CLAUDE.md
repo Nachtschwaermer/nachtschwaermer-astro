@@ -32,7 +32,7 @@ pnpm lint:fix   # Auto-fix ESLint + Prettier issues
 ## CI/CD
 
 - **Renovate** bot handles automated dependency updates (config extends `github>derteaser/renovate-presets`)
-- **CodeQL** GitHub Action scans JavaScript on pushes/PRs to master and weekly
-- **Lint** GitHub Action runs ESLint + Prettier on pushes/PRs to master
+- **CodeQL** GitHub Action scans JavaScript on pushes/PRs to main and weekly
+- **Lint** GitHub Action runs ESLint + Prettier on pushes/PRs to main
 - No test suite
 - Requires **Node.js ≥ 22.12.0** (`.nvmrc` targets Node 24)
