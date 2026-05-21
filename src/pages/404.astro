@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 – Seite nicht gefunden" hero={false}>
+	<main
+		class="min-h-screen flex items-center justify-center px-6 py-20 text-center"
+	>
+		<div class="container mx-auto max-w-xl flex flex-col items-center gap-6">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 64 64"
+				class="size-16 text-gold"
+				aria-hidden="true"
+			>
+				<path
+					fill="currentColor"
+					d="M41.5 44.2A20 20 0 1 1 19.8 22.5 16 16 0 0 0 41.5 44.2Z"></path>
+			</svg>
+
+			<p class="uppercase text-xs tracking-[0.28em] text-gold-muted font-title">
+				Fehler 404
+			</p>
+
+			<h1
+				class="font-title uppercase text-3xl sm:text-4xl tracking-wider text-gold leading-tight text-balance"
+			>
+				Im Dunkeln verlaufen?
+			</h1>
+
+			<p class="text-cream/80 text-lg leading-relaxed text-balance">
+				Diese Seite hat sich in der Nacht verirrt. Vielleicht gab es sie nie,
+				vielleicht ist sie längst weitergezogen.
+			</p>
+
+			<a
+				href="/"
+				class="mt-4 inline-block font-title uppercase text-sm tracking-[0.2em] text-gold border-b border-gold pb-1 hover:text-cream hover:border-cream transition-colors"
+			>
+				Zurück zur Startseite
+			</a>
+		</div>
+	</main>
+</Layout>
