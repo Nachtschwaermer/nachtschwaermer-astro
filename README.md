@@ -1,6 +1,6 @@
 # Nüsser Nachtschwärmer
 
-Static one-page website for the Schützenzug _Nüsser Nachtschwärmer_, a Neuss-based group founded in autumn 1985 that joins the [Nüsser Schützenfest](https://www.schuetzenfest-neuss.de/) each year. The site presents the zug's history, current roster, statistics, and remembers deceased members. All site content is in German.
+Static one-page website for the Schützenzug _Nüsser Nachtschwärmer_, a Neuss-based group founded in autumn 1985 that joins the [Neusser Bürger-Schützenfest](https://www.schuetzenfest-neuss.com/) each year. The site presents the zug's history, current roster, statistics, and remembers deceased members. All site content is in German.
 
 ## Tech stack
 
