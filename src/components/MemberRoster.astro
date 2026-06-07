@@ -12,14 +12,9 @@ const OFFICER_RANKS = new Set(["Oberleutnant", "Leutnant", "Spieß"]);
 const vorstand = persons.filter(
 	(p) => p.data.rank && OFFICER_RANKS.has(p.data.rank),
 );
-const koenig = persons.find((p) =>
-	p.data.rank?.toLowerCase().startsWith("zugkönig"),
-);
+const koenig = persons.find((p) => p.data.king);
 const members = persons.filter(
-	(p) =>
-		!p.data.rank ||
-		(!OFFICER_RANKS.has(p.data.rank) &&
-			!p.data.rank.toLowerCase().startsWith("zugkönig")),
+	(p) => (!p.data.rank || !OFFICER_RANKS.has(p.data.rank)) && !p.data.king,
 );
 
 const cardClass =
@@ -100,7 +95,7 @@ const cardTitleClass =
 								<path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294l2.952-5.605z" />
 								<path d="M5 21h14" />
 							</svg>
-							<h3 class={cardTitleClass}>{koenig.data.rank}</h3>
+							<h3 class={cardTitleClass}>{koenig.data.king}</h3>
 						</div>
 						<p class="text-cream">{koenig.data.title}</p>
 					</div>

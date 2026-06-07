@@ -7,6 +7,7 @@ const persons = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		rank: z.string().optional(),
+		king: z.string().optional(),
 	}),
 });
 const deceased = defineCollection({
