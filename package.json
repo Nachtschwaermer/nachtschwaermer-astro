@@ -15,7 +15,7 @@
 		"@fontsource/montserrat": "5.2.8",
 		"@fontsource/roboto": "5.2.10",
 		"@fontsource/sanchez": "5.2.8",
-		"@tailwindcss/typography": "0.5.19",
+		"@tailwindcss/typography": "0.5.20",
 		"@tailwindcss/vite": "4.2.4",
 		"astro": "6.3.8",
 		"eslint": "10.2.1",
