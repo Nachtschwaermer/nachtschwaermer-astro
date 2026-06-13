@@ -39,8 +39,8 @@ importers:
         specifier: 1.7.0
         version: 1.7.0(eslint@10.2.1(jiti@2.6.1))
       jarallax:
-        specifier: 3.0.0
-        version: 3.0.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
+        specifier: 3.0.1
+        version: 3.0.1(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
       prettier:
         specifier: 3.8.4
         version: 3.8.4
@@ -1395,8 +1395,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jarallax@3.0.0:
-    resolution: {integrity: sha512-ucmddehud0d3vzGNl3IhAGPvtMIlC1CrPYNgT4SVYCwohHAt0khcjlGvB1ukcy0o3hriW1PTsoln/oicvvYT0w==}
+  jarallax@3.0.1:
+    resolution: {integrity: sha512-CipllEQw7vGt5Mz1bDCoP+1izyoakI6TUuyGIhFJAzP/91FGYVvKlGIY6Ijq3zwxkwJlweezduAvys9RsxcqZA==}
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
@@ -2126,8 +2126,8 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  video-worker@3.0.0:
-    resolution: {integrity: sha512-fefwkS07diRNIPQYJf3IHaEDnHrajH9et39L6akiwtqWPPh1Ptz/dpmegLnkY4xFearW1gIVP1zXRitywmuCKg==}
+  video-worker@3.0.1:
+    resolution: {integrity: sha512-J5a5E2/E3eZfIw+A/uBsEKGmxsIQR3kaw0kOiBsQKyeU8WR+9zFufu6ZFIn4QKhmsAN5Yi2TUxLmBRRQYGfPeg==}
 
   vite@7.3.2:
     resolution: {integrity: sha512-Bby3NOsna2jsjfLVOHKes8sGwgl4TT0E6vvpYgnAYDIF/tie7MRaFthmKuHx1NSXjiTueXH3do80FMQgvEktRg==}
@@ -3528,11 +3528,11 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jarallax@3.0.0(react-dom@19.2.5(react@19.2.5))(react@19.2.5):
+  jarallax@3.0.1(react-dom@19.2.5(react@19.2.5))(react@19.2.5):
     dependencies:
       react: 19.2.5
       react-dom: 19.2.5(react@19.2.5)
-      video-worker: 3.0.0
+      video-worker: 3.0.1
 
   jiti@2.6.1: {}
 
@@ -4469,7 +4469,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  video-worker@3.0.0: {}
+  video-worker@3.0.1: {}
 
   vite@7.3.2(jiti@2.6.1)(lightningcss@1.32.0):
     dependencies:
