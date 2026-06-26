@@ -4,7 +4,7 @@ statistics:
   [
     { label: "Jahre aktiv", value: 40 },
     { label: "Mitglieder 2026", value: 24 },
-    { label: "Zugnummer 2025", value: "28" },
+    { label: "Zugnummer 2026", value: "44" },
   ]
 quote:
   text: Soviel Disziplin wie nötig – soviel Freud‘ wie möglich
