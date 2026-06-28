@@ -1,3 +1,6 @@
+# Expose Astro dependencies (e.g. sharp for image optimization) at the
+# node_modules root. Previously set via .npmrc; pnpm 11 reads it from here.
+shamefullyHoist: true
 allowBuilds:
   esbuild: true
   sharp: true
