@@ -42,8 +42,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(@typescript-eslint/parser@8.67.0(eslint@10.8.1(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3))(eslint@10.8.1(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)
       jarallax:
-        specifier: 3.0.1
-        version: 3.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        specifier: 3.1.0
+        version: 3.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       prettier:
         specifier: 3.9.6
         version: 3.9.6
@@ -1420,8 +1420,8 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jarallax@3.0.1:
-    resolution: {integrity: sha512-CipllEQw7vGt5Mz1bDCoP+1izyoakI6TUuyGIhFJAzP/91FGYVvKlGIY6Ijq3zwxkwJlweezduAvys9RsxcqZA==}
+  jarallax@3.1.0:
+    resolution: {integrity: sha512-tO6N/CRcB4OXLMm+ZkuKcuVNXzbhU2SS6gziaPczk3zuVuiUKxYZrL9wrdqmV7lgwGoyu6EUOpvWMgqi8eSCTA==}
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
@@ -3453,7 +3453,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jarallax@3.0.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+  jarallax@3.1.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
