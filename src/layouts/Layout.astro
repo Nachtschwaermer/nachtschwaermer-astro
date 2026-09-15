@@ -28,7 +28,10 @@ const currentDate = new Date();
 		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/manifest.webmanifest" />
-		<script src="https://cdn.usefathom.com/script.js" data-site="QVVBFSLJ" defer
+		<script
+			src="https://cdn.usefathom.com/script.js"
+			data-site="QVVBFSLJ"
+			defer
 		></script>
 		<title>{title}</title>
 	</head>
@@ -36,7 +39,8 @@ const currentDate = new Date();
 		{hero && <Hero />}
 		<slot />
 		<footer class="text-sm text-cream/60 my-20 px-12 text-center">
-			&copy;{currentDate.getFullYear()} Nüsser Nachtschwärmer<br />
+			&copy;{currentDate.getFullYear()} Nüsser Nachtschwärmer
+			<br />
 			Made with
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +50,8 @@ const currentDate = new Date();
 				<path
 					fill-rule="evenodd"
 					d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-					clip-rule="evenodd"></path>
+					clip-rule="evenodd"
+				></path>
 			</svg>
 			in Neuss
 		</footer>

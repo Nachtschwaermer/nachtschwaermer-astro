@@ -17,14 +17,12 @@ const stars = Array.from({ length: 70 }, () => ({
 <div class="splash-root">
 	<div class="splash-bg-radial" id="splash-bg"></div>
 	<div class="starfield" id="starfield">
-		{
-			stars.map((st) => (
-				<span
-					class="s"
-					style={`left: ${st.x}%; top: ${st.y}%; width: ${st.size}px; height: ${st.size}px; box-shadow: 0 0 ${st.size * 2}px rgba(255,255,255,0.4); --op: ${st.op}; --dur: ${st.dur}s; --delay: ${st.delay}s;`}
-				/>
-			))
-		}
+		{stars.map((st) => (
+			<span
+				class="s"
+				style={`left: ${st.x}%; top: ${st.y}%; width: ${st.size}px; height: ${st.size}px; box-shadow: 0 0 ${st.size * 2}px rgba(255,255,255,0.4); --op: ${st.op}; --dur: ${st.dur}s; --delay: ${st.delay}s;`}
+			/>
+		))}
 	</div>
 
 	<div class="splash-stack">
